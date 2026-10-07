@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17110f">
+  <meta name="description" content="Burguer House: o lanche de sempre, com hambúrguer artesanal. Confira o cardápio e peça pelo delivery.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Burguer House — O lanche de sempre, com hambúrguer artesanal">
+  <meta property="og:description" content="Seu lanche tradicional com o diferencial do hambúrguer artesanal. Confira o cardápio da Burguer House.">
+  <meta property="og:image" content="https://danymalaguttimika-afk.github.io/burger-house/burguer-house-banner-familia.webp">
+  <meta property="og:url" content="https://danymalaguttimika-afk.github.io/burger-house/burguer-house-landing-v2.html">
+  <link rel="canonical" href="https://danymalaguttimika-afk.github.io/burger-house/burguer-house-landing-v2.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Zilla+Slab:wght@600;700&display=swap" rel="stylesheet">
+  <title>Burguer House — O lanche de sempre, com hambúrguer artesanal</title>
+  <style>
+    :root{--coal:#17110f;--coal-2:#211715;--red:#8d2025;--red-bright:#b52b2f;--gold:#f5c451;--cream:#faf5ed;--muted:#d4c9bd;--line:rgba(255,255,255,.12);--container:1160px}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;scroll-padding-top:88px}
+    body{font-family:Inter,system-ui,sans-serif;background:var(--coal);color:var(--cream);min-width:320px;overflow-x:hidden}
+    a{color:inherit}
+    .container{width:min(var(--container),calc(100% - 40px));margin-inline:auto}
+    .site-header{position:absolute;inset:0 0 auto;z-index:10;border-bottom:1px solid rgba(255,255,255,.16);background:linear-gradient(180deg,rgba(17,12,11,.62),rgba(17,12,11,.08))}
+    .nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:inline-flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+    .brand img{width:50px;height:50px;object-fit:contain;filter:drop-shadow(0 5px 12px #0008)}
+    .brand-copy{display:grid;gap:2px}
+    .brand-name{font-family:'Zilla Slab',Georgia,serif;font-weight:700;letter-spacing:.05em;font-size:1.05rem}
+    .brand-sub{font-size:.62rem;font-weight:700;letter-spacing:.2em;color:#e7d5bd}
+    .nav-links{display:flex;align-items:center;gap:24px}
+    .nav-link{text-decoration:none;color:#f2e7dc;font-size:.86rem;font-weight:700;transition:color .2s}
+    .nav-link:hover{color:var(--gold)}
+    .nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:0 20px;border-radius:999px;text-decoration:none;font-weight:800;transition:transform .2s,background .2s,box-shadow .2s}
+    .nav-cta{background:var(--gold);color:#22150c;box-shadow:0 8px 24px #0004;font-size:.82rem}
+    .nav-cta:hover,.button:hover{transform:translateY(-2px)}
+    .hero{position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);align-items:center;gap:40px;min-height:min(760px,100svh);padding:126px 0 72px;background:radial-gradient(circle at 82% 48%,#41191a 0,transparent 34%),var(--coal);overflow:hidden}
+    .hero-photo{position:relative;grid-column:2;grid-row:1;width:100%;height:auto;aspect-ratio:2/1;object-fit:contain;object-position:center;z-index:0;border:1px solid rgba(255,255,255,.15);border-radius:24px;box-shadow:0 26px 80px rgba(0,0,0,.45)}
+    .hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(circle at 88% 48%,rgba(181,43,47,.14),transparent 32%);pointer-events:none}
+    .hero-content{grid-column:1;grid-row:1;position:relative;z-index:1;max-width:690px}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--gold);font-size:.72rem;font-weight:800;letter-spacing:.19em;text-transform:uppercase}
+    .eyebrow::before{content:"";width:25px;height:2px;border-radius:2px;background:var(--gold)}
+    h1,h2,h3{font-family:'Zilla Slab',Georgia,serif}
+    h1{font-size:clamp(3.2rem,7vw,6.15rem);font-weight:700;line-height:.96;letter-spacing:-.045em;margin:24px 0 22px;text-wrap:balance}
+    h1 span{color:var(--gold)}
+    .hero-copy{max-width:570px;color:#e1d6ca;font-size:clamp(1rem,1.5vw,1.12rem);line-height:1.75}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+    .button-primary{background:var(--gold);color:#21150d;box-shadow:0 12px 28px #0005}
+    .button-primary:hover{background:#ffd978}
+    .button-secondary{border:1px solid rgba(255,255,255,.34);background:rgba(22,16,14,.5);color:#fff;backdrop-filter:blur(8px)}
+    .hero-note{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:28px;color:#f1e7dc;font-size:.78rem;font-weight:700}
+    .hero-note span{display:inline-flex;align-items:center;gap:7px}
+    .hero-note span::before{content:"✓";display:grid;place-items:center;width:18px;height:18px;border-radius:50%;background:#f5c45122;color:var(--gold);font-size:.7rem}
+    .section{padding:92px 0}
+    .section-head{max-width:700px;margin:0 auto 42px;text-align:center}
+    .section-head .eyebrow{justify-content:center}
+    h2{font-size:clamp(2.35rem,4.8vw,4rem);line-height:1.02;letter-spacing:-.03em;margin:17px 0}
+    h2 span{color:var(--gold)}
+    .section-intro{color:var(--muted);font-size:1rem;line-height:1.75}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .feature{position:relative;overflow:hidden;min-height:220px;padding:27px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.025));box-shadow:0 16px 40px #0002}
+    .feature::after{content:"";position:absolute;width:140px;height:140px;right:-70px;bottom:-70px;border-radius:50%;background:var(--red);filter:blur(58px);opacity:.28}
+    .feature-icon{display:grid;place-items:center;width:48px;height:48px;border-radius:15px;background:linear-gradient(135deg,var(--red-bright),#64171a);font-size:1.35rem;box-shadow:0 8px 20px #8d202544}
+    .feature h3{font-size:1.45rem;margin:20px 0 8px}
+    .feature p{position:relative;z-index:1;color:var(--muted);font-size:.92rem;line-height:1.65;max-width:31ch}
+    .story{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:54px;padding:46px;border-radius:30px;background:linear-gradient(130deg,#291817,#1e1513);border:1px solid rgba(255,255,255,.1);box-shadow:0 22px 56px #0003}
+    .story-photo{position:relative;min-height:350px;overflow:hidden;border-radius:22px;background:#2c1c17}
+    .story-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:65% center}
+    .story-copy .eyebrow{margin-bottom:10px}
+    .story-copy h2{margin:12px 0 16px}
+    .story-copy p{color:var(--muted);line-height:1.75;margin-bottom:23px}
+    .closing{padding:0 0 92px}
+    .closing-card{position:relative;isolation:isolate;overflow:hidden;display:flex;justify-content:space-between;align-items:center;gap:30px;padding:40px 46px;border-radius:26px;background:linear-gradient(110deg,#762024,#421719 70%,#2d1715);box-shadow:0 20px 50px #0004}
+    .closing-card::after{content:"";position:absolute;z-index:-1;right:-55px;top:-110px;width:300px;height:300px;border:1px solid #ffffff18;border-radius:50%;box-shadow:0 0 0 28px #ffffff07,0 0 0 56px #ffffff05}
+    .closing-card h2{font-size:clamp(2rem,4vw,3.2rem);margin:0 0 8px}
+    .closing-card p{color:#f0d4c9;line-height:1.6}
+    .closing-card .button{flex-shrink:0}
+    footer{border-top:1px solid var(--line);padding:23px 0 30px;color:#b9aa9d;font-size:.78rem}
+    .footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}
+    .footer-brand{font-family:'Zilla Slab',Georgia,serif;color:#f4e8dc;font-weight:700;letter-spacing:.08em}
+    @media(max-width:800px){
+      .container{width:min(var(--container),calc(100% - 32px))}
+      .nav{height:74px}.nav-links{gap:14px}.nav-link{display:none}.brand img{width:45px;height:45px}.brand-name{font-size:.94rem}
+      .hero{display:flex;flex-direction:column;align-items:stretch;gap:0;min-height:unset;padding:96px 0 48px}
+      .hero-photo{order:0;position:relative;inset:auto;width:100%;height:auto;aspect-ratio:2/1;object-fit:contain;object-position:center;margin:0 auto 25px;border:0;border-radius:0;box-shadow:none}
+      .hero::before{background:radial-gradient(circle at 80% 15%,rgba(181,43,47,.16),transparent 35%)}
+      .hero-content{order:1;max-width:650px;width:min(var(--container),calc(100% - 32px));margin-inline:auto}.hero-note{margin-top:21px}h1{font-size:clamp(3rem,12vw,4.7rem);margin:18px 0}
+      .section{padding:70px 0}.features{grid-template-columns:1fr;gap:12px}.feature{min-height:unset;padding:23px}.feature h3{margin-top:15px}
+      .story{grid-template-columns:1fr;gap:25px;padding:20px;border-radius:24px}.story-photo{min-height:250px;order:-1}.story-copy{padding:3px 4px 7px}
+      .closing{padding-bottom:66px}.closing-card{display:block;padding:30px 24px;text-align:center}.closing-card .button{width:100%;margin-top:22px}.footer-inner{display:block;text-align:center;line-height:1.9}
+    }
+    @media(max-width:420px){
+      .nav-cta{min-height:42px;padding:0 13px;font-size:.72rem}.brand{gap:8px}.brand img{width:39px;height:39px}.brand-sub{font-size:.55rem}
+      .hero-actions{display:grid;grid-template-columns:1fr}.button{min-height:50px}.hero-note{gap:9px 12px;font-size:.73rem}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Navegação principal">
+      <a class="brand" href="#top" aria-label="Burguer House — início">
+        <img src="https://danymalaguttimika-afk.github.io/burger-house/burguer-house-logo-landing.webp" alt="">
+        <span class="brand-copy"><span class="brand-name">BURGUER HOUSE</span><span class="brand-sub">DELIVERY</span></span>
+      </a>
+      <div class="nav-links">
+        <a class="nav-link" href="#diferencial">Nosso diferencial</a>
+        <a class="nav-cta" href="https://danymalaguttimika-afk.github.io/card-pio-/burguer-house-cardapio-dados.html">Ver cardápio <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-photo" src="https://danymalaguttimika-afk.github.io/burger-house/burguer-house-banner-familia.webp" alt="Família reunida à mesa aproveitando hambúrgueres" fetchpriority="high">
+      <div class="container hero-content">
+        <div class="eyebrow">O tradicional com diferencial artesanal</div>
+        <h1 id="hero-title">O lanche de sempre.<br><span>Com hambúrguer artesanal.</span></h1>
+        <p class="hero-copy">Seu padrão favorito, com o hambúrguer artesanal como protagonista. Um lanche familiar, feito com cuidado para aproveitar em qualquer momento.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://danymalaguttimika-afk.github.io/card-pio-/burguer-house-cardapio-dados.html">Ver cardápio <span aria-hidden="true">→</span></a>
+          <a class="button button-secondary" href="#diferencial">Conhecer a Burguer House</a>
+        </div>
+        <div class="hero-note" aria-label="Destaques"><span>Lanches tradicionais</span><span>Hambúrguer artesanal</span><span>Delivery</span></div>
+      </div>
+    </section>
+    <section class="section" id="diferencial">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">O nosso diferencial</div>
+          <h2>O tradicional continua.<br><span>O hambúrguer é artesanal.</span></h2>
+          <p class="section-intro">A ideia é simples: manter o estilo de lanche que você já conhece e colocar o hambúrguer artesanal no centro do sabor.</p>
+        </div>
+        <div class="features">
+          <article class="feature"><div class="feature-icon" aria-hidden="true">🍔</div><h3>O clássico do dia a dia</h3><p>Lanches tradicionais, sem complicação e do jeito que bate a vontade.</p></article>
+          <article class="feature"><div class="feature-icon" aria-hidden="true">🔥</div><h3>O toque artesanal</h3><p>O diferencial está no hambúrguer, preparado artesanalmente.</p></article>
+          <article class="feature"><div class="feature-icon" aria-hidden="true">🛵</div><h3>Peça pelo delivery</h3><p>Confira o cardápio, escolha seu favorito e faça seu pedido online.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-label="Uma refeição para aproveitar junto">
+      <div class="container story">
+        <div class="story-copy">
+          <div class="eyebrow">Sabor para compartilhar</div>
+          <h2>O lanche que reúne todo mundo.</h2>
+          <p>Um clássico para a sua pausa, para o jantar ou para dividir um momento gostoso com quem você gosta.</p>
+          <a class="button button-primary" href="https://danymalaguttimika-afk.github.io/card-pio-/burguer-house-cardapio-dados.html">Escolher meu lanche <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="story-photo"><img src="https://danymalaguttimika-afk.github.io/card-pio-/burguer-house-banner-fome.jpg" alt="Hambúrguer artesanal servido à mesa" loading="lazy"></div>
+      </div>
+    </section>
+    <section class="closing">
+      <div class="container closing-card">
+        <div><h2>Bateu a fome?</h2><p>Veja o cardápio oficial da Burguer House e escolha o seu próximo favorito.</p></div>
+        <a class="button button-primary" href="https://danymalaguttimika-afk.github.io/card-pio-/burguer-house-cardapio-dados.html">Pedir agora <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container footer-inner"><span class="footer-brand">BURGUER HOUSE</span><span>O lanche de sempre, com hambúrguer artesanal.</span><span>Delivery</span></div></footer>
+</body>
+</html>
